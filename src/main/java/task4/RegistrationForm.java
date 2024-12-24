@@ -29,7 +29,7 @@ public class RegistrationForm {
     public static final int EMAIL_MIN_LENGTH = 5;
     private static final String EMAIL_LOW_LENGTH_ERROR = "Email must be at least 5 characters long.";
     private static final String EMAIL_PATTERN_ERROR = "Email must contain '@' and '.', with no spaces and '.' must follow '@'.";
-    private static final Predicate<String> EMAIL_PATTERN_PREDICATE = text -> Pattern.matches("\\S+@\\S+\\.\\S+", text);
+    private static final Predicate<String> EMAIL_PATTERN_PREDICATE = text -> Pattern.matches("\\w+@\\w+\\.\\w+", text);
 
     public static final int PASSWORD_LENGTH = 10;  //default value for cases provided pass length is out of required borders;
     private static final int MIN_PASSWORD_LENGTH = 8;

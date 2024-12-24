@@ -1,7 +1,6 @@
-package task4;
+package java.task4;
 
-import main.java.task4.AuthenticationException;
-import main.java.task4.LoginForm;
+import java.task4.AuthenticationException;
 import main.java.task4.RegistrationForm;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.DisplayName;
@@ -9,6 +8,7 @@ import org.junit.jupiter.api.Test;
 
 import java.lang.reflect.Constructor;
 import java.lang.reflect.Modifier;
+import main.java.task4.LoginForm;
 
 import static org.junit.jupiter.api.Assertions.*;
 

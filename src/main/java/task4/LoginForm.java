@@ -1,6 +1,8 @@
 package main.java.task4;
 
-public class LoginForm extends RegistrationForm {
+import java.task4.AuthenticationException;
+
+public class LoginForm extends main.java.task4.RegistrationForm {
     private static final int MAX_LOGIN_ATTEMPTS = 3;
     private int loginAttempts = 0;
     private boolean isLocked = false;
@@ -13,7 +15,7 @@ public class LoginForm extends RegistrationForm {
         super();
     }
 
-    public boolean authenticate(String username, String password) {
+    public boolean authenticate(String username, String password) throws AuthenticationException {
         if (isLocked) {
             throw new AuthenticationException("Account is locked due to too many login attempts.");
         }
